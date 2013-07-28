@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<head>
 <meta charset="utf-8">
 <style>
 
@@ -24,6 +26,7 @@ body {
 }
 
 </style>
+</head>
 <body>
 <script src="http://d3js.org/d3.v3.js"></script>
 <script>
@@ -98,7 +101,7 @@ d3.csv("Oxfam_05July2013_Country_Unstacked.csv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Price (USD per Kg");
+      .text("Price (USD per Kg)");
 
   var city = svg.selectAll(".city")
       .data(cities)
@@ -119,3 +122,5 @@ d3.csv("Oxfam_05July2013_Country_Unstacked.csv", function(error, data) {
 });
 
 </script>
+</body>
+</html>
